@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- 
+    1. Write a web page in which display using style sheets the 3D button push 
+    effect when the mouse is over it. Develop two versions of this effect. ø
+
+    --Profesor : box shadow sau text-shadow
+
+ -->
+<html>
+
+<head>
+    <title>Deutsche Well</title>
+    <style>
+        #first {
+            font-size: 25px;
+            border-radius: 2px;
+            position: relative;
+
+        }
+
+        #first:hover {
+            text-shadow: 2px 2px 15px red;
+            box-shadow: 7px 2px 15px 2px black;
+            top: 5px;
+            left: 5px;
+        }
+
+        #second {
+            font-size: 20px;
+            height: 50px;
+            width: 180px;
+        }
+
+        #second:hover {
+            text-shadow: 10px 0px 15px lightblue;
+            box-shadow: -2px 5px 15px gray;
+            height: 45px;
+            width: 150px;
+        }
+
+        .thumbnail {
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        .thumbnail:hover + img {
+            position: absolute;
+            display: inline;
+            top:3px;
+            left: 40%;
+            height: 300px;
+            width: 300px;
+            
+        }
+
+        #pageShown {
+            height: 400px;
+
+        }
+        .task2{
+            position: relative;
+        }
+        .Big{
+            display: none;
+            position: absolute;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Task One problem 1</h1>
+            <h2>First effect</h2>
+            <button id="first" type="button" value="text-shadow">First_Effect</button>
+
+            <h2>Second effect</h2>
+            <button id="second" type="button">Second_Effect</button>
+        </section>
+        <section>
+            <h1>Task Two problem : 14</h1>
+            <article class="task2">
+                <div id="pageShown">
+                </div>
+
+                <img src="static/reus.jpg" id="reus" class="thumbnail">
+                <img src="static/reus.jpg" class="Big">                                
+                <img src="static/goetze.jpg" id="goetze" class="thumbnail">
+                <img src="static/goetze.jpg" class="Big">                                               
+                <img src="static/phillip.jpg" id="phillip" class="thumbnail">
+                <img src="static/phillip.jpg" class="Big">                                               
+                <img src="static/sancho.jpg" id="sancho" class="thumbnail">
+                <img src="static/sancho.jpg" class="Big">                                               
+
+                
+            </article>
+            <article></article>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
