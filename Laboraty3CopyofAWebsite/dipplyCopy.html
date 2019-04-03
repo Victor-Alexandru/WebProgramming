@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Diply</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .navigation {
+      position: fixed;
+      overflow: hidden;
+      height: 65px;
+      width: 100%;
+      z-index: 100;
+      background-color: #0270d1;
+    }
+
+    .navlist {
+      position: relative;
+      bottom: 17px;
+      width: 30%;
+      margin-top: 0.5%;
+      margin-left: 1%;
+      display: inline;
+      list-style-type: none;
+    }
+
+    .lielem {
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      color: white;
+      display: inline;
+      padding: 7px
+    }
+
+    .logo {
+      width: 0%;
+      display: inline;
+      margin-left: 15%;
+    }
+
+    .right {
+      position: relative;
+      bottom: 12px;
+      margin-left: 25%;
+      display: inline;
+      width: 20%;
+    }
+
+    .social_icon {
+      margin: 5px;
+      height: 15px;
+      width: 15px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .mainep {
+      position: relative;
+      top: 68px;
+      height: 2000px;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .h_line {
+      margin: 2px;
+      background-color: lightgray;
+    }
+
+    .normal_photo {
+      display: block;
+      height: 198px;
+      width: 346px;
+      margin: auto;
+    }
+
+    .top {
+      position: relative;
+      height: 330px;
+    }
+
+    .left_article {
+      display: inline-block;
+      width: 395px;
+      height: 325px;
+
+    }
+
+    .mid_article {
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      margin-left: 2px;
+      width: 395px;
+      height: 325px;
+    }
+
+    .red_article {
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      margin-left: 2px;
+      width: 395px;
+      height: 325px;
+
+    }
+
+
+    .btn {
+      position: absolute;
+      top: 9%;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+    }
+
+    .my_svg {
+      display: inline-block;
+      position: relative;
+      top: 16px;
+      left: 24px;
+      width: 44px;
+      height: 40px;
+    }
+
+    .article_text {
+      position: relative;
+      top: -19px;
+      margin-left: 75px;
+    }
+
+    .article_title{
+      color: gray;
+      font-family: Montserrat, sans-serif;
+      font-size: 12px;
+      text-decoration: underline;
+      text-decoration-color: lightblue;
+    }
+
+    .down {
+      height: 60%;
+
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav class="navigation">
+    <div class="logo">
+      <img style="margin-top:0.3%" src="static/logo.svg">
+    </div>
+    <ul class="navlist">
+      <li class="lielem">HOME</li>
+      <li class="lielem">ANIMALS</li>
+      <li class="lielem">POP CULTURE</li>
+      <li class="lielem">HUMOR</li>
+      <li class="lielem">DELICIOUS</li>
+      <li class="lielem">CRAFTY</li>
+    </ul>
+    <div class="right">
+      <a href="https://www.facebook.com/">
+        <img class="social_icon" src="static/facebook.svg">
+      </a>
+      <a href="https://twitter.com/">
+        <img class="social_icon" src="static/twitter.svg">
+      </a>
+      <a href="https://www.facebook.com/">
+        <img class="social_icon" src="static/instagram.svg">
+      </a>
+    </div>
+  </nav>
+  <main class="mainep">
+    <section class="top">
+      <div class="left_article">
+        <img class="normal_photo" src="static/dog.jpg"></img>
+        <svg class="my_svg">
+          <circle cx="20" cy="20" r="20" fill=" #0270d1" />
+        </svg>
+        <div class="article_text">
+          <p class="article_title">CRAFTY</p>
+          <h4>16 People Who Won't Let Anything Stop Them</h4>
+        </div>
+
+      </div>
+      <div class="mid_article">
+        <img class="normal_photo" src="static/men.jpg"></img>
+        <svg class="my_svg">
+          <circle cx="20" cy="20" r="20" fill=" lightblue" />
+        </svg>
+        <div class="article_text">
+          <p class="article_title">DELICIOUS</p>
+          <h4>13 People Who Made A Mess Of Things</h4>
+        </div>
+
+      </div>
+      <div class="red_article">
+        <img class="normal_photo" src="static/women.jpg"></img>
+        <svg class="my_svg">
+          <circle cx="20" cy="20" r="20" fill=" yellow" />
+        </svg>
+        <div class="article_text">
+          <p class="article_title">LIFE UNFILTERED</p>
+          <h4>17 People Who Tried This Whole 'Technology' Thing</h4>
+        </div>
+      </div>
+
+    </section>
+    <hr class="h_line" />
+    <section class="down">
+      <p>test</p>
+    </section>
+  </main>
+</body>
+
+</html>
