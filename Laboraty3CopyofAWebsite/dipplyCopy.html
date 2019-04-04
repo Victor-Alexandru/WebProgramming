@@ -314,6 +314,30 @@
       letter-spacing: -.2px;
       opacity: .6;
     }
+
+    .top_btn {
+      position: absolute;
+      border-radius: 50%;
+      color: lightgray;
+      opacity: 0.5;
+      border: none;
+      top: 30%;
+      left: -12px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .top_btn2 {
+      position: absolute;
+      border-radius: 50%;
+      color: lightgray;
+      opacity: 0.5;
+      border: none;
+      top: 30%;
+      right: -12px;
+      width: 30px;
+      height: 30px;
+    }
   </style>
 </head>
 
@@ -345,6 +369,16 @@
   </nav>
   <main class="mainep">
     <section class="top">
+      <button class="top_btn">
+        <svg class="flickity-button-icon" viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
+        </svg>
+      </button>
+      <button class="top_btn2">
+        <svg class="flickity-button-icon" viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path>
+        </svg>
+      </button>
       <div class="left_article">
         <img class="normal_photo" src="static/dog.jpg"></img>
         <svg class="my_svg">
