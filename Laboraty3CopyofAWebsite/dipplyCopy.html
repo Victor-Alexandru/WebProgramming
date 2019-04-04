@@ -63,7 +63,7 @@
     .mainep {
       position: relative;
       top: 90px;
-      height: 2000px;
+      height: 1200px;
       width: 1200px;
       margin: auto;
     }
@@ -136,7 +136,7 @@
       margin-left: 75px;
     }
 
-    .article_title{
+    .article_title {
       color: gray;
       font-family: Montserrat, sans-serif;
       font-size: 12px;
@@ -144,9 +144,107 @@
       text-decoration-color: lightblue;
     }
 
-    .down {
-      height: 60%;
+    .article_text_2 {
+      font-family: Montserrat, sans-serif;
+      font-size: 18px;
+    }
 
+    .underline_title {
+      font-family: Montserrat, Verdana, sans-serif;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      padding-bottom: 16px;
+      font-weight: 700;
+      color: #111;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .underline_title_2 {
+      font-family: Montserrat-Bold, Verdana, sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: .5rem 0;
+      font-weight: 700;
+      color: #111;
+      margin: 0 0 0 .5rem;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+    }
+
+    .down {
+      position: relative;
+      height: 1320px;
+
+    }
+
+    .down_left {
+      float: left;
+      width: 715px;
+      height: 75%;
+    }
+
+    .down_right {
+      float: right;
+      width: 480px;
+      height: 75%;
+    }
+
+    .in_main {
+      width: 45px;
+      height: 45px;
+    }
+
+    .left_main_article {
+      width: 672.5px;
+      height: 175px;
+      margin: 2px;
+      padding: 3px;
+    }
+
+    .right_main_article {
+      width: 432.5px;
+      height: 110px;
+      margin: 2px;
+      padding: 3px;
+    }
+
+    /* 320x174 */
+    .div_img {
+      width: 320px;
+      height: 174px;
+      float: left;
+    }
+
+    .div_img_2 {
+      width: 156px;
+      height: 110px;
+      float: left;
+    }
+
+    .in_div {
+      margin-left: 175px;
+    }
+
+    .in_div_2 {
+      margin-left: 165px;
+    }
+
+    .in_div_text {
+      font-size: 20px;
+      font-family: Montserrat-Bold, Verdana, sans-serif;
+      position: relative;
+      left: 15px;
+
+    }
+
+    .in_div_text_2 {
+      font-size: 16px;
+      font-family: Montserrat-Bold, Verdana, sans-serif;
+      text-align: center;
+      position: relative;
+      top: 14px;
     }
   </style>
 </head>
@@ -186,7 +284,8 @@
         </svg>
         <div class="article_text">
           <p class="article_title">CRAFTY</p>
-          <h4>16 People Who Won't Let Anything Stop Them</h4>
+
+          <p class="article_text_2">16 People Who Won't Let Anything Stop Them</p>
         </div>
 
       </div>
@@ -197,7 +296,7 @@
         </svg>
         <div class="article_text">
           <p class="article_title">DELICIOUS</p>
-          <h4>13 People Who Made A Mess Of Things</h4>
+          <p class="article_text_2">13 People Who Made A Mess Of Things</p>
         </div>
 
       </div>
@@ -208,19 +307,74 @@
         </svg>
         <div class="article_text">
           <p class="article_title">LIFE UNFILTERED</p>
-          <h4>17 People Who Tried This Whole 'Technology' Thing</h4>
+          <p class="article_text_2">17 People Who Tried This Whole 'Technology' Thing</p>
         </div>
       </div>
 
     </section>
     <hr class="h_line" />
+
+
+
+
+
     <section class="down">
-      <div style="background-color:green" class="down_right">
-        <p>Forest</p>
+      <div class="down_right">
+        <svg class="in_main">
+          <circle style="display:inline" cx="15" cy="15" r="15" fill="pink" />
+          <p class="underline_title_2">Trending</p>
+        </svg>
+
+        <div class="right_main_article">
+          <img class="div_img_2" src="static/1right.jpg"></img>
+          <div class="in_div_2">
+            <h4 class="in_div_text_2">15 Hacks To Beat The Cold And Not Freeze This Winter</h4>
+          </div>
+        </div>
+
+
+
 
       </div>
-      <div  style="background-color:black" class="down_left">
-        <p>Forest</p>
+      <div style="background-color:white" class="down_left">
+        <p class="underline_title">LATEST</p>
+        <div class="left_main_article">
+          <img class="div_img" src="static/1left.jpg"></img>
+          <div class="in_div">
+            <h4 class="in_div_text">Michael Jackson's Alleged Fear Of Intimacy Revealed After Prostitute Comes Forward</h4>
+          </div>
+        </div>
+        <div class="left_main_article">
+          <img class="div_img" src="static/2left.jpg"></img>
+          <div class="in_div">
+            <h4 class="in_div_text">Some Nigerians Are Having Pizzas Flown 4,000 Miles From Britain As A Sign Of Status</h4>
+          </div>
+
+        </div>
+        <div class="left_main_article">
+          <img class="div_img" src="static/3left.jpg"></img>
+          <div class="in_div">
+            <h4 class="in_div_text">If Trump Shuts Down US-Mexico Border, US Will Run Out Of Avocados In Three Weeks</h4>
+          </div>
+        </div>
+        <div class="left_main_article">
+          <img class="div_img" src="static/4left.jpg"></img>
+          <div class="in_div">
+            <h4 class="in_div_text">Pickle Fans Are Mad After McDonald's Admits McPickle Burger Was April Fool's Prank</h4>
+          </div>
+        </div>
+        <div class="left_main_article">
+          <img class="div_img" src="static/5left.jpg"></img>
+          <div class="in_div">
+            <h4 class="in_div_text">Student Confirmed Dead After Getting Into Vehicle She Thought Was Her Uber</h4>
+          </div>
+        </div>
+        <div class="left_main_article">
+          <img class="div_img" src="static/6left.jpg"></img>
+          <div class="in_div">
+            <h4 class="in_div_text">Woman Gives Birth To Her Own Grandchild At The Age Of 61</h4>
+          </div>
+        </div>
       </div>
     </section>
   </main>
