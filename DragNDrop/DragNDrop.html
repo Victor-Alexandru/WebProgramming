@@ -34,6 +34,12 @@
     </style>
     <script>
         console.log("Hello World");
+        var selectImageOne=-1 ;
+        var selectImageTwo=-1;
+        console.log(selectImageOne);
+        function swap(event){
+          console.log(event);
+        }
     </script>
   </head>
 
@@ -41,19 +47,19 @@
     <main>
       <table>
         <tr>
-          <td><img  class="photo" src="static/1.jpg" alt=""></td>
-          <td><img  class="photo" src="static/2.jpg" alt=""></td>
-          <td><img  class="photo" src="static/3.jpg" alt=""></td>
+          <td  id="1"><img   onclick="swap()" id= "1p" class="photo" src="static/1.jpg" alt=""></td>
+          <td id="2"><img   id="2p" class="photo" src="static/2.jpg" alt=""></td>
+          <td id="3"><img   id="3p" class="photo" src="static/3.jpg" alt=""></td>
         </tr>
         <tr>
-          <td><img  class="photo" src="static/4.jpg" alt=""></td>
-          <td><img  class="photo" src="static/5.jpg" alt=""></td>
-          <td><img  class="photo" src="static/6.jpg" alt=""></td>
+          <td id="4"><img   id="4p" class="photo" src="static/4.jpg" alt=""></td>
+          <td id="5"><img   id="5p" class="photo" src="static/5.jpg" alt=""></td>
+          <td id="6"><img   id="6p" class="photo" src="static/6.jpg" alt=""></td>
         </tr>
         <tr>
-          <td><img  class="photo" src="static/7.jpg" alt=""></td>
-          <td><img  class="photo" src="static/8.jpg" alt=""></td>
-          <td><img  class="photo" src="static/9.jpg" alt=""></td>
+          <td id="7"><img  id="8p"  class="photo" src="static/7.jpg" alt=""></td>
+          <td id="8"><img   id="7p" class="photo" src="static/8.jpg" alt=""></td>
+          <td id="9"><img  id="9p"  class="photo" src="static/9.jpg" alt=""></td>
         </tr>
 
       </table>
