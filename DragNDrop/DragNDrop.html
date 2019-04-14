@@ -1,6 +1,6 @@
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
-<!-- <p>
+  <!-- <p>
   pt javascript fac 2 variabile globale care sa retina 2 pozitii
   si schimb in tabel
   ---------------------------
@@ -10,59 +10,68 @@
   si dupa schimb inner textu
 
 </p> -->
+
   <head>
     <meta charset="utf-8">
     <title>DragNDrop</title>
     <style>
-      main{
-        position:relative;
-        top:50px;
-        width:700px;
+      main {
+        position: relative;
+        top: 50px;
+        width: 700px;
         height: 500px;
-        margin:auto;
+        margin: auto;
       }
+
       td {
         padding: 2px;
-        width:200px;
-        height:200px;
+        width: 200px;
+        height: 200px;
       }
-      .photo{
-        width:200px;
-        height:200px;
+
+      .photo2  {
+        width: 200px;
+        height: 200px;
+      }
+
+      #finish{
+        display: block;
+        text-align: center;
+        font-size: 30px;
       }
 
     </style>
-    <script>
-        console.log("Hello World");
-        var selectImageOne=-1 ;
-        var selectImageTwo=-1;
-        console.log(selectImageOne);
-        function swap(event){
-          console.log(event);
-        }
+    <script src="scripts/action.js">
     </script>
   </head>
 
   <body>
     <main>
+      <section>
+        <p>Full view of the flags </p>
+        <p>firstPhoto <span id="firstPhoto"> </span></p>
+        <p>secondPhoto <span id="secondPhoto"> </span></p>
+
+      </section>
       <table>
         <tr>
-          <td  id="1"><img   onclick="swap()" id= "1p" class="photo" src="static/1.jpg" alt=""></td>
-          <td id="2"><img   id="2p" class="photo" src="static/2.jpg" alt=""></td>
-          <td id="3"><img   id="3p" class="photo" src="static/3.jpg" alt=""></td>
+          <td class="photo" id="1"><img id="8p" class="photo2"  src="static/8.jpg"></td>
+          <td class="photo" id="2"><img id="4p" class="photo2"  src="static/4.jpg"></td>
+          <td class="photo" id="3"><img id="9p" class="photo2"  src="static/9.jpg"></td>
         </tr>
         <tr>
-          <td id="4"><img   id="4p" class="photo" src="static/4.jpg" alt=""></td>
-          <td id="5"><img   id="5p" class="photo" src="static/5.jpg" alt=""></td>
-          <td id="6"><img   id="6p" class="photo" src="static/6.jpg" alt=""></td>
+          <td class="photo" id="4"><img id="2p"  class="photo2"  src="static/2.jpg"></td>
+          <td class="photo" id="5"><img id="6p"  class="photo2"  src="static/6.jpg"></td>
+          <td class="photo" id="6"><img id="5p"  class="photo2"  src="static/5.jpg"></td>
         </tr>
         <tr>
-          <td id="7"><img  id="8p"  class="photo" src="static/7.jpg" alt=""></td>
-          <td id="8"><img   id="7p" class="photo" src="static/8.jpg" alt=""></td>
-          <td id="9"><img  id="9p"  class="photo" src="static/9.jpg" alt=""></td>
+          <td class="photo" id="7"><img id="7p"  class="photo2"  src="static/7.jpg"></td>
+          <td class="photo" id="8"><img id="1p"  class="photo2"  src="static/1.jpg"></td>
+          <td class="photo" id="9"><img id="3p"  class="photo2"  src="static/3.jpg"></td>
         </tr>
 
       </table>
+      <p id="finish"></p>
     </main>
 
   </body>
