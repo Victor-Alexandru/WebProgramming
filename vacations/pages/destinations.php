@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
+    <title>Vacations</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -15,37 +15,33 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/base.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-<?php
+<main class="container-fluid main-div">
 
-require 'static/constants.php';
-
-// Create connection
-$conn = new mysqli(servername, username, password, dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql_cmd = "SELECT * FROM destination";
-$result = $conn->query($sql_cmd);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while ($row = $result->fetch_assoc()) {
-        echo "id: " . $row["destinationId"] . " - locationName: " . $row["locationName"] . " " . $row["countryName"] . "<br>";
-    }
-} else {
-    echo "0 results";
-}
+    <?php
+        include "C:\\xampp\\htdocs\\vacations\\static\\header.php"
+    ?>
 
 
-$conn->close();
+    <div class="row main-part">
+        Ana are mere
+    </div>
 
 
-?>
+    <div class="container-fluid footer-part">
+        <?php
+        include "C:\\xampp\\htdocs\\vacations\\static\\footer.php"
+        ?>
+    </div>
+
+</main>
 </body>
 </html>
 

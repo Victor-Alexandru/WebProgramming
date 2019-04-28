@@ -1,0 +1,9 @@
+.li-item{
+    min-height: 5px;
+    min-width: 5px;
+    max-height: 10px;
+}
+
+.btn-custom {
+    width: 250px;
+}
