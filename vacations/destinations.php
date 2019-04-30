@@ -16,12 +16,12 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <script src="static/destinations/destinations-action.js"></script>
 
     <link rel="stylesheet" type="text/css" href="static/base.css">
 
-    <?php
-    include "static/index-main/css-include.php"
-    ?>
+    <link rel="stylesheet" type="text/css" href="static/destinations/destinations-style.css">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -31,19 +31,33 @@
 
     <?php
     include "static/header.php"
-
     ?>
 
 
     <div class="row main-part">
-        <?php
-        include "static/index-main/index-main.php"
-        ?>
+        <div class="col-sm-2 left-div"></div>
+        <div class="col-sm-8 middle-div">
+            <div id="result" class="container"></div>
+            <div class="container button-div">
+                <div class="row">
+                    <div>
+                        <button id="previous-button" type="button" class="btn btn-outline-primary"><i
+                                    class="fa fa-arrow-left"></i></button>
+                    </div>
+                    <div class="ml-auto">
+                        <button id="next-button" type="button" class="btn btn-outline-primary"><i
+                                    class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 right-div"></div>
     </div>
+
+
     <div class="container-fluid footer-part">
         <?php
         include "static/footer.php"
-
         ?>
     </div>
 

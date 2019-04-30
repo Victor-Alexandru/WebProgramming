@@ -4,6 +4,13 @@
     max-height: 10px;
 }
 
+.main-part{
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .btn-custom {
     width: 250px;
 }
