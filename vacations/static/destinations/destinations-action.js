@@ -15,6 +15,7 @@ $(document).ready(function () {
 
         });
     }
+    console.log(start, end)
     getData(start, end);
 
 
@@ -23,16 +24,19 @@ $(document).ready(function () {
         if (start !== 0) {
             start = start - 4;
             end = end - 4;
+            console.log(start, end)
             getData(start, end);
         }
 
     });
 
     $("#next-button").click(() => {
-        start = start + 4;
-        end = end + 4;
-        getData(start, end);
-
+        if ($("tr").length >= 5) {
+            start = start + 4;
+            end = end + 4;
+            console.log(start, end)
+            getData(start, end);
+        }
 
     });
 

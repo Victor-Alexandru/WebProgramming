@@ -3,7 +3,7 @@ echo "<div class=\"col align-self-start\">";
 echo "</div>";
 echo "<div class=\"col align-self-center\">";
 echo "<div class=\"row li-item m-4 p-3\">";
-echo "<button type=\"button\"  class=\"btn btn-outline-primary btn-lg btn-custom\">Destination Manager</button>";
+echo "<a href=\"destinationManager.php\"><button type=\"button\"  class=\"btn btn-outline-primary btn-lg btn-custom\">Destination Manager</button></a>";
 echo "</div>";
 echo "<div class=\"row li-item m-4 p-3\">";
 echo "<button type=\"button\" class=\"btn btn-outline-primary btn-lg btn-custom\">Target Manager</button>";

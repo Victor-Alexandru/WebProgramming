@@ -12,7 +12,7 @@ if (isset($_POST["start"], $_POST["end"])) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql_cmd = "SELECT * FROM `destination` ORDER BY destinationId  LIMIT " . $start_index . "," . $end_index;
+    $sql_cmd = "SELECT * FROM `destination` ORDER BY destinationId  LIMIT " . $start_index . "," . "4";
     $result = $conn->query($sql_cmd);
 
     if ($result->num_rows == 0){

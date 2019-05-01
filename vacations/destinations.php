@@ -7,6 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -41,11 +42,12 @@
             <div class="container button-div">
                 <div class="row">
                     <div>
-                        <button id="previous-button" type="button" class="btn btn-outline-primary"><i
+                        <button id="previous-button" type="button" class="btn btn-outline-primary rounded-circle"><i
                                     class="fa fa-arrow-left"></i></button>
                     </div>
+
                     <div class="ml-auto">
-                        <button id="next-button" type="button" class="btn btn-outline-primary"><i
+                        <button id="next-button" type="button" class="btn btn-outline-primary rounded-circle"><i
                                     class="fa fa-arrow-right"></i></button>
                     </div>
                 </div>
