@@ -16,7 +16,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="static/destinationManager/destinationManagerscript.js"></script>
+    <script src="static/targetManager/targetManagerScript.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="static/base.css">
@@ -40,27 +40,19 @@
         <div class="col-sm-2 left-div"></div>
         <div class="col-sm-8 middle-div">
             <div class="form-component container shadow-lg m-3 h-100 w-100">
-                <form name="destinationForm" class="mt-2">
+                <form name="targetForm" class="mt-2">
                     <div class="form-group">
-                        <label for="formGroupExampleInput2">Id</label>
-                        <input type="number" class="form-control" name="id" placeholder="1">
+                        <label for="formGroupExampleInput2">Target Id</label>
+                        <input type="number" class="form-control" name="targetId" placeholder="1">
                     </div>
                     <div class="form-group">
-                        <label for="formGroupExampleInput">Location Name</label>
-                        <input type="text" class="form-control" name="locationName" placeholder="ex. Hamburg">
+                        <label for="formGroupExampleInput">Target Name</label>
+                        <input type="text" class="form-control" name="targetName"
+                               placeholder="ex. Notre Damm Cathedral">
                     </div>
                     <div class="form-group">
-                        <label for="formGroupExampleInput2">Country Name</label>
-                        <input type="text" class="form-control" name="countryName" placeholder="ex. Germany">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Description</label>
-                        <input type="text" class="form-control" name="description"
-                               placeholder="ex. one of the oldest city in De">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Cost per Day</label>
-                        <input type="number" class="form-control" name="costPerDay" placeholder="300">
+                        <label for="formGroupExampleInput2">Destination Id</label>
+                        <input type="number" class="form-control" name="destinationId" placeholder="1">
                     </div>
                 </form>
                 <div class="row">

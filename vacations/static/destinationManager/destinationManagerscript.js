@@ -39,10 +39,40 @@ $(document).ready(function () {
         });
     }
 
+    function deleteDestination(start, end) {
+        $.ajax({
+            type: "POST",
+            url: "static/deleteDestination.php",
+            data: {
+                id: document.forms["destinationForm"]["id"].value,
+            },
+            cache: false,
+            success: function (data) {
+                console.log(data);
+                $("#result").html(data);
+
+            },
+
+
+        });
+    }
+
     $("#add-button").click(() => {
         try {
             validateForm();
             addDestination()
+        } catch (e) {
+            alert(e)
+        }
+    });
+
+    $("#delete-button").click(() => {
+        try {
+            if (!(document.forms["destinationForm"]["id"].value)) {
+                throw Error("Invalid form parameters");
+            }
+            deleteDestination()
+
         } catch (e) {
             alert(e)
         }

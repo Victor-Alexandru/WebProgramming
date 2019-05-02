@@ -10,17 +10,21 @@
     text-align: center;
 }
 
-.items-table{
+.items-table {
     min-width: 610px;
 }
-.button-div{
+
+.button-div {
     min-width: 650px;
 }
 
-#previous-button{
+#previous-button {
     float: left;
+    display: none;
 }
-#next-button{
+
+#next-button {
     float: right;
+    display: none;
 
 }

@@ -1,6 +1,6 @@
 <?php
 require 'constants.php';
-if (isset($_POST["start"], $_POST["end"])) {
+if (isset($_POST["start"], $_POST["end"], $_POST["countryName"])) {
     $start_index = $_POST["start"];
 
     $end_index = $_POST["end"];
@@ -12,9 +12,9 @@ if (isset($_POST["start"], $_POST["end"])) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql_cmd = "SELECT * FROM `destination` ORDER BY destinationId  LIMIT " . $start_index . "," . "4";
+    $sql_cmd = "SELECT * FROM `destination` WHERE  countryName = '" . $_POST["countryName"] . "' ORDER BY destinationId  LIMIT " . $start_index . "," . "4";
 
-    $sql_cmd2 = "SELECT * FROM `destination` ORDER BY destinationId  LIMIT " . $end_index. "," . "4";
+    $sql_cmd2 = "SELECT * FROM `destination` WHERE  countryName = '" . $_POST["countryName"] . "'   ORDER BY destinationId  LIMIT " . $end_index . "," . "4";
 
     $result = $conn->query($sql_cmd);
 
@@ -22,7 +22,6 @@ if (isset($_POST["start"], $_POST["end"])) {
 
     ?>
     <?php
-
 
 
     $jsonData = array();
