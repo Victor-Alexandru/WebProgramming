@@ -1,0 +1,10 @@
+.left-column, .right-column, .center-column {
+    height: 500px;
+}
+
+.play {
+    position: relative;
+    top: 250px;
+    display: block;
+    margin: 0 auto;
+}
