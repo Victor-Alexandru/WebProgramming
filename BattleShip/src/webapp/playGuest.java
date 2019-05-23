@@ -20,9 +20,13 @@ public class playGuest extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.playersQueue.addPlayer(request.getParameter("name"));
-        System.out.println(playersQueue.getPlayersList().toString());
         request.setAttribute("playerName", request.getParameter("name"));
         request.setAttribute("playerArray", playersQueue.getPlayersList().toString());
+        request.setAttribute("playersSize", playersQueue.getPlayersLength());
+
+        if (playersQueue.getPlayersLength() > 2) {
+            request.getRequestDispatcher("TooManyPlayers.jsp").forward(request, response);
+        }
         request.getRequestDispatcher("waitingQueue.jsp").forward(request, response);
 
     }

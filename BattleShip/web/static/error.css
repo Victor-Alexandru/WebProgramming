@@ -1,0 +1,7 @@
+/*body{*/
+/*    height: 900px;*/
+/*}*/
+.up-label , .down-label ,.mid-label {
+    height: 270px;
+    text-align: center;
+}

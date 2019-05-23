@@ -28,6 +28,7 @@
 
     <div class="row">We have in the waiting queue ${playerArray}</div>
     <div class="row">Hello ${playerName}</div>
+    <div class="row">There are  ${playersSize} connected</div>
 </div>
 
 </body>

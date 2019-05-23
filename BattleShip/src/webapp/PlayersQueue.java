@@ -18,4 +18,8 @@ public class PlayersQueue {
     public List<String> getPlayersList() {
         return this.playersList;
     }
+
+    public Integer getPlayersLength() {
+        return this.playersList.size();
+    }
 }
