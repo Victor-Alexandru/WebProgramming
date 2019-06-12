@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationInAsp", "VacationInAsp\VacationInAsp.csproj", "{07D50E05-E34E-442C-A949-07AD3EF56F81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07D50E05-E34E-442C-A949-07AD3EF56F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D50E05-E34E-442C-A949-07AD3EF56F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D50E05-E34E-442C-A949-07AD3EF56F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D50E05-E34E-442C-A949-07AD3EF56F81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {904D3D5D-027D-4DEB-8DCF-AF36EC5870D5}
+	EndGlobalSection
+EndGlobal
